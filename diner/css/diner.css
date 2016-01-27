@@ -1,0 +1,170 @@
+html {
+    background-color: #000;
+}
+body {
+    background-color: #fff;
+    border-radius: 20px;
+    margin: auto;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    width: 80%;
+    font-family: 'Quicksand', verdana, sans-serif, trebuchet;
+}
+
+header h1 {
+    padding: 20px 0 0;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: normal;
+}
+
+h2 {
+    margin-left: 2%;
+}
+
+/* START RESPONSIVE iFrame styles */ 
+.embed-container {
+    height: 0;
+    max-width: 100%;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+}
+
+.embed-container iframe {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+label, input, textarea {margin-left: 3%;}
+
+/* END Responsive iFrame styles */
+
+aside h3 {
+    padding: 1% 2%;
+}
+aside p {
+    padding: 2%;
+}
+article {
+    -moz-column-count: 2;
+    -moz-column-gap: 2em;
+}
+article p:first-child {
+    margin: 0;
+}
+p {
+    padding: 3%;
+}
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid red;
+    padding: 6px;
+    width: 100px;
+}
+
+div.meals {
+    text-align: center;
+}
+
+figure {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 32%;
+}
+
+figure img {
+    width: 100%;
+}
+
+figcaption {
+    text-align: center;
+}
+
+/* reCAPTCHA styles */
+
+    /* writes to small text above reCAPTCHA upon failure */
+    .dateFeedback{
+        font-style:italic;
+        font-size:70%;
+        font-weight:bold;
+        color:#f00;
+    }
+
+    body {
+        min-width:320px; /* reCAPTCHA is 318px */
+    }
+
+    /* these 2 rules reposition the reCAPTCHA widget a bit to the left */
+    #recaptcha_widget_div{position:4px;}
+    #recaptcha_area {
+        position:relative;
+        left:4px;
+    }
+
+footer {
+    clear: both;
+    padding: 40px;
+    text-align: center;
+}
+ 
+    
+/******** RESPONSIVE STYLES **********/
+
+/* DESKTOP */    
+@media all and (min-width: 1280px) {
+html{
+    background-color:navajowhite;
+    }
+body {
+    min-height: 600px;
+}
+section {
+    float: left;
+    width: 65.9574%;
+}
+section div, section article {
+    padding: 3%;
+
+}
+aside {
+    border-left: 1px solid #ccc;
+    float: right;
+    min-height: 400px;
+    width: 31.9149%;
+}
+}
+    
+/* TASKBAR */  
+@media all and (min-width: 481px) and (max-width: 1279px) {
+html{
+    background-color:ivory;
+    }
+}
+    
+/* PHONE */
+@media all and (max-width: 480px) {
+html{
+    background-color:honeydew;
+    }
+figure {
+    border: 1px solid black;
+    display: block;
+    margin: 0 auto 20px;
+    width: 90%;
+}
+article {
+    -moz-column-count: 1;
+    -moz-column-gap: 0;
+}
+}
+
+   

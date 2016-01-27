@@ -1,0 +1,181 @@
+html {
+	background-color:#000;
+}
+
+body {
+	background-color:#fff;
+	width:80%;
+	margin:auto;
+	-webkit-border-radius:20px;
+	-moz-border-radius:20px;
+	border-radius:20px;
+}
+
+header h1 {
+    padding:20px 0 0 0;
+    text-align: center;
+}
+
+
+h2 {
+    margin-left:2%;   
+}
+
+
+
+/* START Responsive iFrame styles */
+
+.embed-container {
+	position: relative; 
+	padding-bottom: 56.25%; 
+	height: 0; 
+	overflow: hidden; 
+	max-width: 100%; 
+     }
+
+.embed-container iframe
+       { 
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	width: 100%; 
+	height: 100%; 
+	}
+
+/* END Responsive iFrame styles */
+
+aside h3 {
+    padding:1% 2%;
+}
+
+aside p {
+    padding:2%;
+}
+
+article {
+    -webkit-column-count:2;
+    -moz-column-count:2;
+    column-count:2;
+
+    -webkit-column-gap:2em;
+    -moz-column-gap:2em;
+    column-gap:2em;
+}
+
+article p:first-child {
+ margin:0;
+}
+
+p {padding:3%;}
+
+
+div.meals  {
+    text-align:center;
+}
+
+figure {
+    width:32%;
+    display:inline-block;
+    padding:0;
+    margin:0;
+}
+
+figure img {
+    width:100%;   
+}
+
+figcaption {
+    text-align: center;   
+}
+
+
+footer {
+    clear:both;
+    text-align:center;
+    padding:40px;
+}
+
+
+/* ****** RESPONSIVE STYLES ***** */
+
+/* DESKTOP */
+@media all and (min-width: 1280px) {
+
+    body {
+        min-height: 600px;   
+    }
+    
+    section {
+        float:left;
+        width:65.957446%;
+        }
+
+    section div, section article {
+        padding:2%;
+    }
+    
+    aside {
+        float:right;
+        width:31.914893%;
+        border-left:1px solid #ccc;
+        min-height:400px;
+    }
+    
+}
+
+
+/* TABLET */
+@media all and (min-width:481px) and (max-width:1279px) {
+    
+   /* put tablet specific styles here */
+
+}
+
+
+/* PHONE */
+@media all and (max-width:480px) {
+    
+    figure {
+        display: block;
+        width:90%;
+        margin:0 auto 20px auto;
+        border:1px solid black;
+    }
+    
+    article {
+    -webkit-column-count:1;
+    -moz-column-count:1;
+    column-count:1;
+
+    -webkit-column-gap:0;
+    -moz-column-gap:0;
+    column-gap:0;
+}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

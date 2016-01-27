@@ -1,0 +1,26 @@
+table {
+        margin:40px auto;
+        border:1px solid #000;
+        border-collapse: collapse;
+    }
+    
+    table.client{
+        width: 50%;
+    }
+        table.audience{
+        width: 90%;
+    }
+    
+    table.audience td{
+        width:33%;
+    }
+        tr:nth-child(odd) {
+        background-color: #ccc; 
+    }
+    td{
+        padding: 8px;
+    }
+
+    footer{
+        text-align: center;
+    }

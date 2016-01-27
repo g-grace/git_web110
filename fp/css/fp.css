@@ -1,0 +1,220 @@
+html {
+    background-color: #000;
+}
+body {
+    background-color: #fff;
+    border-radius: 20px;
+    margin: auto;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    width: 80%;
+    font-family: 'Quicksand', verdana, sans-serif, trebuchet;
+    font-size: 13px;
+    padding: 3%;
+}
+header h1 {
+    margin-left: 10%;
+    padding: 20px 0 0;
+    font-family: 'Quicksand', verdana, sans-serif, trebuchet;
+}
+h2 {
+    font-family: 'Quicksand', verdana, sans-serif, trebuchet;
+}
+
+h3{
+    font-family: 'Quicksand', verdana, sans-serif, trebuchet;
+    margin-left: auto;
+    padding-left: 10px;
+    text-align: inherit;
+}
+
+h4{
+    font-family: 'PT Sans', sans-serif;
+    margin-left: auto;
+    padding-left: 10px;
+    text-align: center;
+    align-content: center;
+}
+
+/* START RESPONSIVE iFrame styles */ 
+.embed-container {
+    height: 0;
+    max-width: 80%;
+    overflow: hidden;
+    padding-bottom: 56%;
+    position: relative;
+}
+.embed-container iframe {
+    height: 90%;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    position: absolute;
+}
+
+label, input, textarea {margin-left: 3%;}
+
+/* END Responsive iFrame styles */
+
+aside h3 {
+    padding: 1% 0;
+    align-content: center;
+}
+aside p {
+    padding: 1% 0;
+}
+article {
+    -moz-column-count: 1;
+    -moz-column-gap: 2em;
+}
+article p:first-child {
+    margin: 0;
+}
+p {
+    font-family: 'Quicksand', verdana, sans-serif, trebuchet;
+    font-weight: 400;
+    font-size: 14px;
+    padding-left: 10px;
+    margin-left: 10px;
+}
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid red;
+    padding: 6px;
+    width: 100px;
+}
+
+div.hyperbikes {
+    font-family: 'Quicksand', verdana, sans-serif, trebuchet;
+    text-align: center;
+}
+div.events {
+    text-align: center;
+    font-family: 'Quicksand', verdana, sans-serif, trebuchet;
+}
+div.tyrell {
+    text-align:left;
+    font-family: 'Quicksand', verdana, sans-serif, trebuchet;
+    display: block;
+}
+div.welcome {
+    font-family: 'Quicksand', verdana, sans-serif, trebuchet;
+    display: inline-block;
+    position:relative;
+}
+
+div.interview{
+    font-family: 'Quicksand', verdana, sans-serif, trebuchet;
+    font-color: skyblue;
+}
+
+img.facebook{
+    position: relative;
+    width: 20%
+}
+
+figure {
+    display: inline-table;
+    margin: 0;
+    padding: 0;
+    width: 30%;
+}
+
+figure img {
+    margin: 2px;
+    width: 90%;
+    position: relative;
+    align-content: center;
+}
+
+figcaption {
+    text-align: left;
+    font-size: 13px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+
+/* reCAPTCHA styles */
+		
+		/* writes to small text above reCAPTCHA upon failure */
+		.dateFeedback{
+			font-style:italic;
+			font-size:70%;
+			font-weight:bold;
+			color:#f00;
+		}
+		body {
+			min-width:320px; /* reCAPTCHA is 318px */
+		}
+		/* these 2 rules reposition the reCAPTCHA widget a bit to the left */
+		#recaptcha_widget_div{position:relative;}
+		#recaptcha_area {
+			position:relative;
+			left:-4px;
+		}
+
+footer {
+    clear: both;
+    padding: 40px;
+    text-align: center;
+}
+ 
+    
+/******** RESPONSIVE STYLES **********/
+
+/* DESKTOP */    
+@media all and (min-width: 1280px) {
+html{
+    background-color:yellow;
+    }
+body {
+    min-height: 600px;
+}
+section {
+    float: left;
+    width: 66%;
+}
+section div, section article {
+    padding: 3%;
+
+}
+aside {
+    border-left: 1px solid #ccc;
+    float: right;
+    min-height: 400px;
+    width: 31.9149%;
+}
+}
+    
+/* TASKBAR */  
+@media all and (min-width: 481px) and (max-width: 1279px) {
+html{
+    background-color:yellow;
+    }
+}
+    
+/* PHONE */
+@media all and (max-width: 480px) {
+html{
+    background-color:yellow;
+    }
+figure {
+    border: 1px solid black;
+    display: block;
+    margin: 0 auto 20px;
+    width: 80%;
+}
+article {
+    -moz-column-count: 1;
+    -moz-column-gap: 0;
+}
+}
+
+th{
+    background-color: #fff;
+}

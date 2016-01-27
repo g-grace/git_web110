@@ -1,0 +1,50 @@
+ChangeLog for nmCAPTCHA Contact Form Package: 2014-04-24  Bill Newman  <williamnewman@gmail.com>
+
+This is an informal changelog, a summary of changes in each version and between.
+Changes are categorized as Change, Fix, Sec (Security Issue) or Feature.
+
+No changes for 4/24, just cleanup of word doc.
+
+Updated 04/14/2014 
+[Change] Removed stylesheet, but added styles to sample pages make reCAPTCHA more responsive
+
+Updated 01/20/2014  
+[Fix] Removed all pieces that were causing validation errors - required elements and wrap=virtual
+[Feature] Added stylesheet to each so there was no raw style tags in the files
+[Change] Changed folder name to includes (plural) to match WEB110/WEB120 class
+[Change] Removed header/footer reference as it's easier to merely include the file in an existing page
+[Change] Adapted form code to HTML5 only - removed table
+[Change] Removed JS validation
+
+Updated 10/1/2013 - 
+removed injection code as was failing on checkboxes - needs research - inc file line 86 approx
+added html5 validation a bit better
+still needs move to include folder, contact-multiple needs to be re-done without tables, (both actually)
+
+Updated 4/10/2013 - 
+todo: needs cleanup, removal of inline styles, etc. across all examples
+todo: all versions need to unified in look & feel, have Sara create a default form style
+todo: trouble shoot multi-form
+
+Version 2.01 (2013-2-2)
+[Fix] Added email injection preventing code
+
+Version 2.0 (2013-1-28)
+[Fix] spam filters on the server end require reply-to: and use of headers instead of using from field as user email
+[Fix] PHP_EOL constant added so end of line would work on windows email servers
+[Change] Moved complex PHP code to contact_include.php
+
+Version 1.21 (2010-4-28)
+[Feature] created no_captcha.php page for sites that don't want to, or can't use reCAPTCHA
+
+Version 1.21 (2010-4-28)
+[Fix] sanitize_it() and header/footer files commented out - both are optional
+
+Version 1.2 (2010-2-03)
+[Feature] Complete re-write to allow any form fields be emailed and automatic reload of form data via POST to JS array 
+
+Version 1.11 (2010-1-31)
+[Change] Changed 'sanitize_it' function so that it replaces suspect data with spaces, not empty strings due to occasional false positives
+
+Version 1.1 (2010-1-25)
+[Change] Complete re-write from older versions - adds JS, PHP sanitization functions, installation instructions

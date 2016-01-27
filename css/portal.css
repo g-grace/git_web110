@@ -1,0 +1,57 @@
+html{
+        background-color: #ccc;  /*Red Green Blue*/
+    }
+
+body{
+    width:80%; 
+    background-color: #fff;
+    margin:0 auto;  /* center me top-bottom 0auto 0auto*/
+    padding:0px 20px 20px 20px; /* Top Right Bottom Left */
+}
+
+h1{
+    margin-top:0;
+    padding-top:20px; 
+}
+
+footer{
+     text-align: center;
+}
+
+img{display:none;}
+
+/* RESPONSIVE STYLE */
+/* DESKTOP styles for anything bigger than 999px */
+@media all and (min-width: 1000px) {
+    html{
+        background-color:red;
+    }
+    
+    img.desktop{
+        float:right;
+        display:inline-block;
+    }
+}
+
+/* TABLET styles between 480px and 999px */
+@media all and (min-width: 480px) and (max-width:999px) {
+    html{
+        background-color:blue;
+    }
+    img.tablet
+    {
+        float: right;
+        display:inline-table;
+    }
+}
+
+/* PHONE styles for less than 480px */
+@media all and (max-width: 479px) {
+    html{
+        background-color:yellow;
+    }
+    img.phone{
+        float: center;
+        display:inline;
+    }
+}
